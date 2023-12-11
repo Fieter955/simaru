@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>Sidebars · Bootstrap v5.3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+      </head>
+  <body>
+   <main class="d-flex flex-nowrap">
+    <div
+class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary vh-100"
+style="width: 300px"
+>
+<a
+  href="/"
+  class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+>
+  <div class="dropdown">
+    <h5>
+    <a
+      href="#"
+      class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+
+    <i class="bi bi-person-circle me-2"></i>
+      Purwadi Hutagalung
+    </a>
+    <ul class="dropdown-menu text-small shadow mt-2">
+      <form action="http://127.0.0.1:8000/logout" method="POST">
+        <input type="hidden" name="_token" value="dnW3bQ48suTxL4pdgOBVgljPH3xH9wp8ZvZ9FiXb">        <li>
+          <button class="dropdown-item">Sign out</button>
+        </li>
+      </form>
+    </ul>
+  </h5>
+    
+  </div>
+</a>
+<hr />
+<ul class="nav nav-pills flex-column mb-auto">
+  <li class="nav-item ">
+    <a href="/" class="nav-link link-body-emphasis">
+      <i class="bi bi-speedometer2 me-1"></i>
+      Dashboard
+    </a>
+  </li>
+  <li>
+    <a href="http://127.0.0.1:8000/dashboard/labs" class="nav-link         active
+    " aria-current="page">
+      <i class="bi bi-building-gear me-1"></i>
+      Manage Room
+    </a>
+  </li>
+  <li>
+    <a href="http://127.0.0.1:8000/dashboard/class-schedule" class="nav-link link-body-emphasis">
+      <i class="bi bi-calendar3"></i>
+      Class Schedule
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-body-emphasis">
+      <i class="bi bi-calendar2-range me-1"></i>
+      Move Schadule
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-body-emphasis">
+      <i class="bi bi-file-earmark-arrow-down"></i>
+      Report
+    </a>
+  </li>
+</ul>
+<hr>
+</div>    <div class="container mt-5 overflow-hidden">
+      <table class="table">
+     <thead>
+       <tr>
+         <th scope="col">#</th>
+         <th scope="col">Lab</th>
+         <th scope="col">Peminjam</th>
+         <th scope="col">Tujuan</th>
+         <th scope="col">Tanggal</th>
+         <th scope="col">Jam Mulai</th>
+         <th scope="col">Jam Selesai</th>
+       </tr>
+     </thead>
+     <tbody>
+            <tr>
+         <th scope="row">1</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makan siang</td>
+         <td>2023-10-28</td>
+         <td>17:30:00</td>
+         <td>19:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">2</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makan</td>
+         <td>2023-10-27</td>
+         <td>13:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">3</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>fsdwas</td>
+         <td>2023-10-26</td>
+         <td>13:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">4</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makan siang</td>
+         <td>2023-10-26</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">5</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>afdws  </td>
+         <td>2023-10-23</td>
+         <td>17:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">6</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dadwasda</td>
+         <td>2023-10-22</td>
+         <td>15:30:00</td>
+         <td>18:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">7</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makanaa</td>
+         <td>2023-10-22</td>
+         <td>09:30:00</td>
+         <td>12:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">8</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>apel</td>
+         <td>2023-10-21</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">9</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dawdsdawdsa</td>
+         <td>2023-10-21</td>
+         <td>08:30:00</td>
+         <td>12:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">10</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>amaka adw</td>
+         <td>2023-10-21</td>
+         <td>10:30:00</td>
+         <td>15:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">11</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Dharma Wacana</td>
+         <td>2023-10-21</td>
+         <td>17:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">12</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>mawsss</td>
+         <td>2023-10-19</td>
+         <td>08:30:00</td>
+         <td>11:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">13</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dwadadwas</td>
+         <td>2023-10-18</td>
+         <td>18:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">14</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>adwcc</td>
+         <td>2023-10-18</td>
+         <td>13:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">15</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>acccw</td>
+         <td>2023-10-17</td>
+         <td>15:30:00</td>
+         <td>18:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">16</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dwasda</td>
+         <td>2023-10-16</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">17</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dwass</td>
+         <td>2023-10-16</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">18</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dsawdsada</td>
+         <td>2023-10-16</td>
+         <td>17:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">19</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dwdsada </td>
+         <td>2023-10-16</td>
+         <td>17:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">20</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>dwsss</td>
+         <td>2023-10-16</td>
+         <td>14:30:00</td>
+         <td>17:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">21</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rapat Internal</td>
+         <td>2023-10-15</td>
+         <td>10:30:00</td>
+         <td>13:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">22</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>adwaaa</td>
+         <td>2023-10-15</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">23</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>amakna wassa</td>
+         <td>2023-10-15</td>
+         <td>14:30:00</td>
+         <td>17:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">24</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>adwasdc </td>
+         <td>2023-10-15</td>
+         <td>12:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">25</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>wwdsadwdsad</td>
+         <td>2023-10-15</td>
+         <td>09:30:00</td>
+         <td>13:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">26</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makan</td>
+         <td>2023-10-15</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">27</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>awwss</td>
+         <td>2023-10-15</td>
+         <td>10:30:00</td>
+         <td>13:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">28</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>makan siang</td>
+         <td>2023-10-15</td>
+         <td>16:30:00</td>
+         <td>19:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">29</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rapat UPTTIK</td>
+         <td>2023-10-14</td>
+         <td>13:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">30</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>admaw</td>
+         <td>2023-10-14</td>
+         <td>13:30:00</td>
+         <td>16:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">31</th>
+         <td>Lab A</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rapat Pimpinan FTK</td>
+         <td>2023-10-13</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">32</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Bukber</td>
+         <td>2023-10-13</td>
+         <td>18:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">33</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rapat Kuliah Industri</td>
+         <td>2023-10-13</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">34</th>
+         <td>Lab C</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rakernas Dosen</td>
+         <td>2023-10-12</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">35</th>
+         <td>Lab C</td>
+         <td>Najib Halim</td>
+         <td>Organisasi</td>
+         <td>2023-10-11</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">36</th>
+         <td>Lab B</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Sosialisai HIV/AIDS</td>
+         <td>2023-10-11</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">37</th>
+         <td>Lab D</td>
+         <td>Purwadi Hutagalung</td>
+         <td>Rapat LPJ BEM FTK</td>
+         <td>2023-10-10</td>
+         <td>10:30:00</td>
+         <td>13:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">38</th>
+         <td>Lab A</td>
+         <td>Ina Padmasari</td>
+         <td>Praktek OOP</td>
+         <td>2023-10-08</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">39</th>
+         <td>Lab D</td>
+         <td>Ina Padmasari</td>
+         <td>Rapat Internal Dosen</td>
+         <td>2023-10-06</td>
+         <td>07:30:00</td>
+         <td>10:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">40</th>
+         <td>Lab B</td>
+         <td>Syahrini Zulaika</td>
+         <td>Bimbingan</td>
+         <td>2023-10-06</td>
+         <td>10:30:00</td>
+         <td>13:00:00</td>
+     </tr>
+            <tr>
+         <th scope="row">41</th>
+         <td>Lab B</td>
+         <td>Syahrini Zulaika</td>
+         <td>Makan Siang</td>
+         <td>2023-10-05</td>
+         <td>17:30:00</td>
+         <td>20:00:00</td>
+     </tr>
+          </tbody>
+   </table>
+
+    </div>
+   </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
